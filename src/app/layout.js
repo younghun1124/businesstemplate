@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar'
 import './globals.css'
 import Link from 'next/link'
 export const metadata = {
@@ -11,27 +12,42 @@ export default function RootLayout({ children }) {
     <html>
       
       <body>
+      
       <header className=''>
-    <nav className='flex justify-between'>
-    <Link href="/">로고</Link>  
-    <ul className='flex space-x-6'>
-      <li><Link href="/1">IRUM INFRA</Link></li>
-      <li><Link href="/">System Intergration</Link></li>
-      <li><Link href="/">기업시스템 개발</Link></li>
-      <li><Link href="/">제품</Link></li>
-      <li><Link href="/">고객지원</Link></li>
-    </ul>
-    </nav>
+      <Navbar />       
       </header>      
-      <div className='"md:container md:mx-auto"'>
-      <h1>
-        고객의 Business 성공과 함께 성장하는<br/>
-        최고의 SI 전문 파트너
-      </h1>
+      <div className="w-screen bg-no-repeat bg-cover bg-[url('/server01.png')] h-[200px] xl:h-[500px]" >
+      
+        <div className="lg:container lg:mx-auto">
+          <h1 className='text-center'>
+            고객의 Business 성공과 함께 성장하는<br/>
+            최고의 SI 전문 파트너
+          </h1>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h3>시스템 구축 및 이전</h3>
+          <p>임시 텍스트입니다</p>
+        </div>
       </div>
       <div>
-        <h2>Our Business</h2>
-        <p>다양한 상황에 최적화된 솔루션을 제공합니다</p>
+        <div>
+          <h3>네트워크</h3>
+          <p>임시 텍스트입니다</p>
+        </div>
+        <div>
+          <h3>시스템 통합 유지보수</h3>
+          <p>임시 텍스트입니다</p>
+        </div>
+        <div>
+          <h3>네트워크</h3>
+          <p>임시 텍스트입니다</p>
+        </div>
+      </div>
+      <div>
+        시스템 구축 
       </div>
       <div>
         <ul className='flex'>
@@ -42,7 +58,7 @@ export default function RootLayout({ children }) {
         </ul>
       </div>
       {children}      
-      <footer>
+      <footer className='bg-gray-800 text-gray-400'>
         <h4>(주) 이룸인프라</h4>
         <address>
         <ul>
