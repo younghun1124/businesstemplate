@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import HoverCard from './components/HoverCard'
-import BgDiv from './components/BgDiv'
-
+import Solution from './Solution.png'
+import Infra from './Infra.png'
+import Careservice from './Careservice.png'
+import Logistics from './Logistics.png'
+import Card from './components/Card'
 export default function Home() {
   return (<>
   <div className="w-screen bg-center bg-no-repeat bg-cover bg-[url('/introduce/intro.jpg')] h-[500px] md:h-[700px] animate-slide" >
@@ -29,7 +32,7 @@ export default function Home() {
     </div>
       
   </div>
-  <div className='mx-auto w-[calc(100%-80px)] pt-10 mb-10 relative'>
+  {/* <div className='mx-auto w-[calc(100%-80px)] pt-10 mb-10 relative'>
   
       <h1 className=' text-3xl mb-10 text-center font-bold '>Smart Retail</h1>
       <div className='flex flex-col lg:flex-row space-y-5 lg:space-y-0'>
@@ -38,7 +41,51 @@ export default function Home() {
       <HoverCard url='/poscare/careservice.jpg' p1='Care Service' p2='지속적이고, 안정적인 매장운영 제공'/>
       <HoverCard url='/skyscrapers-3184798_1920.jpg' p1='Logistics' p2='창고, 점포와 고객간의 물류전반 서비스 제공'/>
       
-    </div>
+    </div> 
+  </div> */}
+  <div className='  max-w-screen-xl mx-auto p-5 pt-10 pb-20 mb-10 relative'>
+  
+  <h1 className=' text-4xl m-20 text-center font-bold '>Smart Retail</h1>
+  <div className='place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-x-5 gap-y-5'>
+  
+  <Card >
+    <Image style={{marginTop:'0.5rem',}} width={200} src={Solution} alt="대체 텍스트"></Image>
+    <h2 className='m-2'>Solution</h2>
+    <p className='mb-5'>상품, 회원, 결제 솔루션 제공</p>
+  </Card>
+  <Card>
+    <Image style={{marginTop:'0.5rem',}}  className='' width={200}  src={Infra} alt="대체 텍스트"></Image>
+    <h2 className='m-2'>Infra</h2>
+    <p className='mb-5'>솔루션 운영을 위한 서버 및 네트워크, POS 제공</p>
+  </Card>
+  <Card>
+    <Image style={{marginTop:'0.5rem',}}  width={200}  src={Careservice} alt="대체 텍스트"></Image>
+    <h2 className='m-2'>Care Service</h2>
+    <p className='mb-5'>지속적이고, 안정적인 매장운영 제공</p>
+  </Card>
+  <Card>
+    <Image style={{marginTop:'0.5rem',}}   width={200}  src={Logistics} alt="대체 텍스트"></Image>
+    <h2 className='m-2'>Logistics</h2>
+    <p className='mb-5'>창고, 점포와 고객간의 물류 전반 서비스 제공</p>
+  </Card>
+  
+  
+</div>
+
+
+</div>
+  <div className='bg-gradient-to-b from-gray-900 to-[#203345] min-h-[600px]'>
+    <div className='max-w-screen-xl  mx-auto p-5 py-[100px] relative'>
+    
+        <h1 className=' text-4xl mb-16 text-center font-bold text-slate-100 '>사업 분야</h1>
+        <div className='flex flex-col lg:flex-row'>
+        <HoverCard url='/shopping-center.jpg' p1='POS System' p2={['POS system', 'Pos 주변기기']}/>
+        <HoverCard url='/support/Infra.jpg' p1='Service' p2={['장비설치', 'IT 아웃소싱',' Repair']}/>
+        <HoverCard url='/poscare/careservice.jpg' p1='Project' p2={['시스템 도입, 교체',' 시스템 업그레이드','시스템 점검','시스템 클리닝']}/>
+        
+        
+      </div>
+  </div>
     
 
   </div>
