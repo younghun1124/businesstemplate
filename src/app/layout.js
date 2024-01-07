@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
       </header>      
       
       {children}      
-      <footer className='bg-[#191f28]  text-[#6b7684] p-10'>
-      <div className='max-w-screen-xl m-auto'>
+      <footer className='bg-[#191f28]  text-[#6b7684] '>
+      <div className='max-w-screen-xl m-auto px-5 py-10'>
         <Image src={'/ALTLOGO.png'} className='mb-5' width={90} height={0} alt='alt로고'></Image>
               
           <ul className='space-y-2 text-sm'>
