@@ -1,4 +1,4 @@
-import { cn } from "../utils/cn";
+import { cn } from "../../utils/cn";
 
 export const BentoGrid = ({ className, children }) => {
   return (
@@ -17,7 +17,7 @@ export const BentoGridItem = ({ className, title, description, header }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl items-center group/bento hover:shadow-xl transition duration-200 shadow p-4  bg-white border border-transparent justify-start flex flex-col space-y-4",
+        "row-span-1 h-full rounded-xl items-center group/bento hover:shadow-xl transition duration-200 shadow-md p-4  bg-white border border-transparent justify-start flex flex-col space-y-4",
         className
       )}
     >

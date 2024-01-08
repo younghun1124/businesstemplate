@@ -1,6 +1,7 @@
-export default function BgDiv({url}) {
+import { cn } from "@/utils/cn"
+export default function BgDiv({className,children=''}) {
     return (
-        <div style={{ backgroundImage: `url(${url})` }} className='absolute top-0 left-0 w-full h-full brightness-50'></div>
+        <div className={cn(`w-full ${className}`)}>{children}</div>
     );
 }
 
