@@ -4,7 +4,7 @@ import MaxLimitContainer from "./MaxLimitContainer";
 export default function Container({children,classname}) {
     return (
         <BgDiv className={classname}>
-            <MaxLimitContainer>
+            <MaxLimitContainer >
                 {children}
             </MaxLimitContainer>
         </BgDiv>

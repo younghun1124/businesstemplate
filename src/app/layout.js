@@ -13,6 +13,7 @@ const noto_sans_kr=Noto_Sans_KR({
 
 })
 
+
 export default function RootLayout({ children }) {
   return (
     <html className={noto_sans_kr.className}>
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
       <header className=''>
       <Navbar />       
       </header>      
-      
+      <div className='h-[70px] w-1'></div>
       {children}      
       <footer className='bg-[#191f28]  text-[#6b7684] '>
       <div className='max-w-screen-xl m-auto px-5 py-10'>

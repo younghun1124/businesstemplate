@@ -18,20 +18,21 @@ export default function Home() {
     // Add other styles as needed
   };
   return (<>
-  <div className="w-screen bg-center bg-no-repeat bg-cover bg-[url('/introduce/intro.jpg')] h-[500px] md:h-[700px] animate-slide" >
+  <div className="w-screen bg-center bg-no-repeat bg-cover bg-[url('/introduce/intro.webp')] lg:h-[700px] h-[400px] animate-slide" >
   
   <MaxLimitContainer className='max-w-screen-lg relative pt-40 z-10'>
-  <h1 className='text-center mb-40 font-bold text-3xl md:text-5xl text-white leading-relaxed' >
+  <h1 className='text-center mb-40 font-bold text-3xl lg:text-5xl text-white leading-relaxed' >
       ALL Together Company, Completion!
       </h1>
-      <TextGenerateEffect className='leading-none text-3xl' words='ALT 홈페이지를 찾아주셔서 감사합니다.'/>
-      <TextGenerateEffect className='text-left font-medium text-xl' words='‘에이앨티’는 다년간 현장에서 성공적인 Pos 유지 보수를 수행한 경험을 바탕으로 창업하였으며'/>
-      <TextGenerateEffect className='text-left font-medium text-xl' words='항상 고객의 입장에서 생각하고 함께 성장 하도록 노력하겠습니다.'/>
+   <div className='lg:inline hidden max-w-[820px]'>
+        <TextGenerateEffect className='leading-none text-3xl' words='ALT 홈페이지를 찾아주셔서 감사합니다.'/>
+        <TextGenerateEffect className='text-left font-medium text-xl' words='‘에이앨티’는 다년간 현장에서 성공적인 Pos 유지 보수를 수행한 경험을 바탕으로 창업하였으며 항상 고객의 입장에서 생각하고 함께 성장 하도록 노력하겠습니다.'/>
+   </div>
 
   </MaxLimitContainer>
       
     
-  <div className='bg-black absolute h-[500px] md:h-[700px] w-full top-0 opacity-30'>
+  <div className='bg-black absolute lg:h-[700px] h-[400px]  w-full top-[70px] opacity-30'>
   </div>        
   </div>
   

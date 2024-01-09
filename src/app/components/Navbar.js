@@ -1,19 +1,20 @@
-'use client';
+'use client'
 import Link from 'next/link'
 
-import { useCycle,motion } from 'framer-motion';
+import { useCycle } from 'framer-motion';
 import Image from 'next/image';
 import { MenuToggle } from './MenuToggle';
 export default function Navbar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
+
     return (
       <>
       
        <div className='z-40 bg-white w-full fixed'>
       <div className="  max-w-screen-xl mx-auto">
-      <nav className='flex justify-between text-lg p-5'>
+      <nav className='flex justify-between h-[70px] text-lg text-black p-5'>
     <Link className='' href="/"><Image src={'/ALTLOGO.png'} width={90} height={0} alt='alt로고'></Image></Link>
-    <motion.div animate={isOpen?"open" :"closed"}><MenuToggle toggle={() => toggleOpen()} /></motion.div>
+    <div className='h-[23px] my-auto'><MenuToggle toggle={() => toggleOpen()} isOpen={isOpen} /></div>
     
     <ul className='hidden md:flex space-x-6 font-medium'>
       <li><Link className='hover:text-blue-400' href="/introduce/ceo">회사소개</Link></li>
@@ -35,7 +36,7 @@ export default function Navbar() {
     </nav>
      </div>
   </div>
-  <div className='h-[70px] w-1'></div>
+  
   </>
        
     );
