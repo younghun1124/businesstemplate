@@ -8,7 +8,7 @@ export default function layout({children}) {
     const navmap=
         [
             {name:'POS system',url:'/hardware/possystem'},
-            {name:'POS 제품',url:'/hardware/product'},
+            {name:'POS 제품 소개',url:'/hardware/posproduct'},
             
         ]
     return (

@@ -30,8 +30,8 @@ export default function Navbar() {
     </nav>
     <nav className={`overflow-hidden border-slate-500/30 border-b-[1px] transition-all ${isOpen ? 'h-[320px]' : 'h-[2px]'} md:hidden `}> 
       <ul>
-        <li className='p-5'><HoverLink className='hover:text-blue-400 ' href="/introduce">회사소개</HoverLink></li>
-        <li className='p-5'><HoverLink href="/">하드웨어</HoverLink></li>
+        <li className='p-5'><HoverLink className='hover:text-blue-400 ' href="/introduce/ceo">회사소개</HoverLink></li>
+        <li className='p-5'><HoverLink href="/hardware/possystem">하드웨어/POS</HoverLink></li>
         <li className='p-5'><HoverLink href="/">프로젝트</HoverLink></li>
         <li className='p-5'><HoverLink href="/">유지보수</HoverLink></li>
         <li className='p-5'><HoverLink href="/">ITO</HoverLink></li>

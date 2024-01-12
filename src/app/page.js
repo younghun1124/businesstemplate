@@ -60,12 +60,12 @@ export default function Home() {
   <p className='mb-10'>스마트 리테일은 쇼핑,식음,문화등 우리 생활의 모든 분야에 결제 시스템을 담당합니다. 
 매장 운영을 위한 고객과의 접점 전반에 걸친  솔루션, 인프라, 유지관리의 토탈 서비스를 제공합니다.
 </p>
+                <ScrollAnimationComponent>
       <BentoGrid className="max-w-screen-xl mx-auto ">
           
   
         
              
-                <ScrollAnimationComponent className='grid'>
                   <ThreeDCard
                     key={1}
                     title='Solution'
@@ -101,9 +101,9 @@ export default function Home() {
               header={<Image    width={200}  src={Logistics} alt="대체 텍스트"/>}       
              
             />
-                </ScrollAnimationComponent>
         
       </BentoGrid>
+                </ScrollAnimationComponent>
   
 
     {/* <div className='place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-x-5 gap-y-5'>
@@ -139,7 +139,7 @@ export default function Home() {
         <h1 className='relative z-20 mt-10 text-4xl mb-16 text-center font-bold text-slate-100 '>사업 영역</h1>
         <div className='max-w-screen-xl px-5 flex flex-col relative z-20 w-full lg:flex-row'>
         <HoverCard url='/shopping-center.jpg' p1='POS System' p2={['POS system', 'Pos 주변기기']}/>
-        <HoverCard url='/support/Infra.jpg' p1='Service' p2={['장비설치', 'IT 아웃소싱',' Repair']}/>
+        <HoverCard url='/support/infra.jpg' p1='Service' p2={['장비설치', 'IT 아웃소싱',' Repair']}/>
         <HoverCard url='/poscare/careservice.jpg' p1='Project' p2={['시스템 도입, 교체',' 시스템 업그레이드','시스템 점검','시스템 클리닝']}/>        
       </div>
     
