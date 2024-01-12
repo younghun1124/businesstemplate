@@ -4,6 +4,10 @@ import Link from 'next/link'
 import { useCycle } from 'framer-motion';
 import Image from 'next/image';
 import { MenuToggle } from './MenuToggle';
+import { cn } from '@/utils/cn';
+function HoverLink({children, href, className}){
+return <Link className={cn('hover:text-blue-400',className)} href={href}>{children}</Link>
+}
 export default function Navbar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
@@ -17,20 +21,20 @@ export default function Navbar() {
     <div className='h-[23px] my-auto'><MenuToggle toggle={() => toggleOpen()} isOpen={isOpen} /></div>
     
     <ul className='hidden md:flex space-x-6 font-medium'>
-      <li><Link className='hover:text-blue-400' href="/introduce/ceo">회사소개</Link></li>
-      <li><Link href="/">하드웨어</Link></li>
-      <li><Link href="/">프로젝트</Link></li>
-      <li><Link href="/">유지보수</Link></li>
-      <li><Link href="/">ITO</Link></li>
+      <li><HoverLink className='hover:text-blue-400' href="/introduce/ceo">회사소개</HoverLink></li>
+      <li><HoverLink href="/hardware/possystem">하드웨어/POS</HoverLink></li>
+      <li><HoverLink href="/">프로젝트</HoverLink></li>
+      <li><HoverLink href="/">유지보수</HoverLink></li>
+      <li><HoverLink href="/">ITO</HoverLink></li>
     </ul>
     </nav>
     <nav className={`overflow-hidden border-slate-500/30 border-b-[1px] transition-all ${isOpen ? 'h-[320px]' : 'h-[2px]'} md:hidden `}> 
       <ul>
-        <li className='p-5'><Link className='hover:text-blue-400 ' href="/introduce">회사소개</Link></li>
-        <li className='p-5'><Link href="/">하드웨어</Link></li>
-        <li className='p-5'><Link href="/">프로젝트</Link></li>
-        <li className='p-5'><Link href="/">유지보수</Link></li>
-        <li className='p-5'><Link href="/">ITO</Link></li>
+        <li className='p-5'><HoverLink className='hover:text-blue-400 ' href="/introduce">회사소개</HoverLink></li>
+        <li className='p-5'><HoverLink href="/">하드웨어</HoverLink></li>
+        <li className='p-5'><HoverLink href="/">프로젝트</HoverLink></li>
+        <li className='p-5'><HoverLink href="/">유지보수</HoverLink></li>
+        <li className='p-5'><HoverLink href="/">ITO</HoverLink></li>
       </ul>
     
     </nav>

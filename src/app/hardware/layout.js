@@ -7,17 +7,15 @@ import { ActiveNavLinks } from "@/app/components/ActiveNav";
 export default function layout({children}) {
     const navmap=
         [
-            {name:'인사말',url:'/introduce/ceo'},
-            {name:'회사연혁',url:'/introduce/history'},
-            {name:'사업실적',url:'/introduce/buisness'},
-            // {name:'주요협력사',url:'/introduce/partners'},
-            {name:'찾아오시는 길',url:'/introduce/location'},
+            {name:'POS system',url:'/hardware/possystem'},
+            {name:'POS 제품',url:'/hardware/product'},
+            
         ]
     return (
         <>
-        <BgDiv className={`bg-[url(/skyscraper.jpg)] bg-cover w-100 h-[500px] bg-fixed`}>
+        <BgDiv className={`bg-[url(/support/infra.jpg)] bg-cover w-100 h-[500px] bg-fixed`}>
             <MaxLimitContainer className="relative z-10 h-full grid place-items-center">
-                <h1 className="text-5xl text-white font-bold">회사소개</h1>
+                <h1 className="text-5xl text-white font-bold">하드웨어/POS</h1>
             </MaxLimitContainer>
         </BgDiv>
         <div className='bg-black absolute  h-[500px]  w-full top-[70px] opacity-30'>

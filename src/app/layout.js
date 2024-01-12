@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <li><a className='hover:underline' href='tel:02-6291-9595'>Tel) 02-6291-9595</a></li>
             <li><a className='hover:underline' href='fax:02-857-7008'>Fax) 02–6291-9599</a></li>
             <li><a className='hover:underline' href='mailto:Ykh@altio.co.kr)'>Ykh@altio.co.kr</a></li>
-            <li><a className='hover:underline' target="_blank" rel="noreferrer" href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C%2033%EA%B8%B8%2012%20%EC%9A%B0%EB%A6%BC%20E-Biz%EC%84%BC%ED%84%B0%202%EC%B0%A8%20707%ED%98%B8/address/14126015.89255784,4507147.929730302,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C33%EA%B8%B8%2012,new?c=14125951.9283784,4507137.7306574,18,0,0,0,dh">서울 금천구 시흥대로 97, 25-324
+            <li><a className='hover:underline' target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/e4mXZAjYkgL6NJpt8">서울 금천구 시흥대로 97, 25-324
   </a></li>
           </ul>
           

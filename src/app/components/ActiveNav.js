@@ -11,7 +11,7 @@ export const ActiveNavLink = ({name, className, activeClass, url}) => {
     return(
         
      
-            <Link className="grow" href={url} >  
+            <Link className="grow basis-auto lg:basis-0" href={url} >  
             
              <div className={cn('bg-sky-900 text-center',className, isActive&&activeClass)}>{name} </div>
              </Link>
