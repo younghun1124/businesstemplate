@@ -5,25 +5,25 @@ import { ScrollAnimationCompOpaicty } from "@/app/components/ScrollAnimationComp
 export default function page() {
     const content = [
         {
-          title: "식당",
+          title: "식음",
           description:
-            "식당, 카페 및 프렌차이즈",
-            src1:'/posSystem/store.png',
-            src2:'/posSystem/pos.png',
+            "식음, 카페 및 프렌차이즈",
+            src1:'/posSystem/market.svg',
+
         },
         {
           title: "쇼핑",
           description:
             "백화점, 할인점, 서점 등의 유통분야",
-            src1:'/posSystem/shopping.png',
-            src2:'/posSystem/kiosk.png',
+            src1:'/posSystem/shopping.svg',
+        
         },
         {
           title: "문화",
           description:
             "리조트, 극장 등 여가, 문화생활",
-            src1:'/posSystem/culture.png',
-            src2:'/posSystem/pay.png',
+            src1:'/posSystem/culture.svg',
+          
         },
        
       ];

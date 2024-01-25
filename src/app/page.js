@@ -1,16 +1,17 @@
 'use client'
 import Image from 'next/image'
 import HoverCard from './components/HoverCard'
-import Solution from '../image/Solution.png'
-import Infra from '../image/Infra.png'
-import Careservice from '../image/Careservice.png'
-import Logistics from '../image/Logistics.png'
+import Solution from '../image/Solution.svg'
+import Infra from '../image/infra.svg'
+import Careservice from '../image/Care.svg'
+import Logistics from '../image/Logistics.svg'
 import { BentoGrid } from './AceternityUI/BentoGrid'
 import  {BackgroundBoxes}  from './components/BackgroundBoxes'
 import { ThreeDCard } from './components/ThreeDCard'
 import MaxLimitContainer from './components/MaxLimitContainer'
 import { TextGenerateEffect } from './AceternityUI/TextGenerateEffect'
 import ScrollAnimationComponent from './components/ScrollAnimationCompnent'
+import Link from 'next/link'
 
 
 
@@ -35,8 +36,7 @@ export default function Home() {
    </div>
 
   </MaxLimitContainer>
-      
-    
+
   <div className='bg-black absolute lg:h-[700px] h-[400px]  w-full top-[70px] opacity-30'>
   </div>        
   </div>
@@ -138,9 +138,9 @@ export default function Home() {
    
         <h1 className='relative z-20 mt-10 text-4xl mb-16 text-center font-bold text-slate-100 '>사업 영역</h1>
         <div className='max-w-screen-xl px-5 flex flex-col relative z-20 w-full lg:flex-row'>
-        <HoverCard url='/shopping-center.jpg' p1='POS System' p2={['POS system', 'Pos 주변기기']}/>
-        <HoverCard url='/support/infra.jpg' p1='Service' p2={['장비설치', 'IT 아웃소싱',' Repair']}/>
-        <HoverCard url='/poscare/careservice.jpg' p1='Project' p2={['시스템 도입, 교체',' 시스템 업그레이드','시스템 점검','시스템 클리닝']}/>        
+        <Link className='w-full' href='/hardware/possystem'><HoverCard url='/shopping-center.jpg' p1='POS System' p2={['POS system', 'Pos 주변기기']}/></Link>
+        <Link className='w-full' href='/service/poscare'><HoverCard url='/support/infra.jpg' p1='Service' p2={['장비설치', 'IT 아웃소싱',' Repair']}/></Link>
+        <Link className='w-full' href='/service/poscare'><HoverCard url='/poscare/careservice.jpg' p1='Project' p2={['시스템 도입, 교체',' 시스템 업그레이드','시스템 점검','시스템 클리닝']}/></Link>        
       </div>
     
   </BackgroundBoxes>

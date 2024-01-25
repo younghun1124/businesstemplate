@@ -16,16 +16,16 @@ const AnimatedItem = ({ item }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0.3 }}
         transition={{ duration: 0.5 }}
-        className="flex space-x-5"
+        className='grid place-items-center'
       >
-        <Image src={item.src1} width={100} height={100} alt="" />
-        <Image src={item.src2} width={100} height={100} alt="" />
+        <Image src={item.src1} width={150} height={150} alt="" />
+        
       </motion.div>
       <motion.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0.3 }}
         transition={{ duration: 0.5 }}
-        className="text-2xl mt-5 font-bold"
+        className="text-2xl text-center mt-5 font-bold"
       >
         {item.title}
       </motion.h2>
@@ -33,7 +33,7 @@ const AnimatedItem = ({ item }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0.3 }}
         transition={{ duration: 0.5 }}
-        className="text-lg max-w-sm mt-2"
+        className="text-lg text-center max-w-sm mt-2"
       >
         {item.description}
       </motion.p>

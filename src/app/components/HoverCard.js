@@ -1,6 +1,6 @@
 export default function HoverCard({ url, p1, p2 }) {
     return (
-        <div className='md:w-full'>
+        <div className="md:w-full">
             <div className="group h-[400px] relative overflow-hidden">
 
                 <div style={{ backgroundImage: `url(${url})` }} className={`absolute top-0 left-0 w-full h-full bg-center bg-cover transition-transform duration-300 ease-out group-hover:scale-105 z-0`}></div>

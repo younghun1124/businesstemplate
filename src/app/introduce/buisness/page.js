@@ -45,13 +45,12 @@ export default function Buisness() {
         </div>
        
     </Container>
-    <Container classname='bg-gray-50'>
+    {/* <Container classname='bg-gray-50'>
     <div className="grid sm:place-items-center">
   
 
-  {/* Text Column */}
   <div className="flex justify-evenly my-5 flex-col md:flex-row text-md md:text-lg lg:text-xl">
-    {/* First Item */}
+
     <ScrollAnimationComponent>
         <div className=" p-4 bold m-2 rounded-lg">
           <p className="text-black mb-2 font-bold ">Hardware</p>
@@ -60,7 +59,7 @@ export default function Buisness() {
           <p className="text-blue-700">2022년도 매출 : <span className="font-bold">255,736k₩</span></p>
         </div>
     </ScrollAnimationComponent>
-    {/* Second Item */}
+
    <ScrollAnimationComponent>
         <div className=" p-4 m-2 rounded-lg">
         <p className="text-black mb-2 font-bold ">Service</p>
@@ -71,7 +70,7 @@ export default function Buisness() {
    </ScrollAnimationComponent>
   </div>
 </div>
-    </Container>
+    </Container> */}
    
               </>
        
